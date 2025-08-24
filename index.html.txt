@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>أذكار الصباح والمساء</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #2c3e50, #3498db);
+      color: #fff;
+      direction: rtl;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    header {
+      background-color: #1abc9c;
+      padding: 20px;
+      text-align: center;
+      font-size: 1.8rem;
+      font-weight: bold;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    }
+    main {
+      flex: 1;
+      padding: 15px;
+      overflow-y: auto;
+    }
+    section {
+      background-color: rgba(255,255,255,0.1);
+      border-radius: 12px;
+      margin-bottom: 25px;
+      padding: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+    section h2 {
+      text-align: center;
+      margin-bottom: 15px;
+      font-size: 1.5rem;
+      color: #e67e22;
+      text-shadow: 1px 1px 2px #000;
+    }
+    .zekr {
+      background-color: rgba(255,255,255,0.2);
+      padding: 10px 12px;
+      margin-bottom: 15px;
+      border-radius: 8px;
+      position: relative;
+      line-height: 1.6;
+      font-size: 1.1rem;
+    }
+    .actions {
+      position: absolute;
+      top: 8px;
+      left: 12px;
+      display: flex;
+      gap: 8px;
+    }
+    button {
+      background-color: #2980b9;
+      border: none;
+      color: white;
+      padding: 6px 10px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 0.9rem;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.4);
+      transition: background-color 0.3s ease;
+    }
+    button:hover {
+      background-color: #1f6391;
+    }
+    footer {
+      text-align: center;
+      padding: 12px;
+      font-size: 0.9rem;
+      background-color: #16a085;
+      color: white;
+      box-shadow: 0 -2px 8px rgba(0,0,0,0.3);
+    }
+    /* Scrollbar for main */
+    main::-webkit-scrollbar {
+      width: 8px;
+    }
+    main::-webkit-scrollbar-thumb {
+      background: #16a085;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>أذكار الصباح والمساء</header>
+
+  <main>
+
+    <section id="morning">
+      <h2>🌅 أذكار الصباح</h2>
+      <!-- أذكار الصباح ستضاف هنا بواسطة JS -->
+    </section>
+
+    <section id="evening">
+      <h2>🌙 أذكار المساء</h2>
+      <!-- أذكار المساء ستضاف هنا بواسطة JS -->
+    </section>
+
+  </main>
+
+  <footer>© 2025 - موقع الأذكار</footer>
+
+  <script>
+    const azkarMorning = [
+      "اللّهـمَّ أَنْتَ رَبِّـي لا إلهَ إلاّ أَنْتَ، خَلَقْتَني وَأَنا عَبْـدُك...",
+      "أَصْـبَحْنا وَأَصْـبَحَ المُـلكُ للهِ، وَالحمدُ للهِ، لا إلهَ إلاّ اللهُ وَحدَهُ لا شريكَ لهُ...",
+      "اللّهـمَّ بِكَ أَصْبَحْنا وَبِكَ أَمْسَينا...",
+      "رضيتُ باللهِ ربّا، وبالإسلامِ ديناً، وبمحمدٍ صلى الله عليه وسلم نبياً.",
+      "اللّهُـمَّ إِنِّي أَصْـبَحْتُ أُشْهِدُكَ، وَأُشْهِدُ حَمَلَةَ عَرْشِكَ، وَمَلائِكَتَكَ...",
+      "اللّهُـمَّ عافِني في بَدَني، اللّهُـمَّ عافِني في سَمْعي، اللّهُـمَّ عافِني في بَصري..."
+    ];
+
+    const azkarEvening = [
+      "اللّهـمَّ أَنْتَ رَبِّـي لا إلهَ إلاّ أَنْتَ، خَلَقْتَني وَأَنا عَبْـدُك...",
+      "أَمْسَيْنا وَأَمْسَى المُـلكُ للهِ، وَالحمدُ للهِ، لا إلهَ إلاّ اللهُ وَحدَهُ لا شريكَ لهُ...",
+      "اللّهـمَّ بِكَ أَمْسَيْنا وَبِكَ أَصْبَحْنا...",
+      "رضيتُ باللهِ ربّا، وبالإسلامِ ديناً، وبمحمدٍ صلى الله عليه وسلم نبياً.",
+      "اللّهُـمَّ إِنِّي أَمْسَيْتُ أُشْهِدُكَ، وَأُشْهِدُ حَمَلَةَ عَرْشِكَ، وَمَلائِكَتَكَ...",
+      "اللّهُـمَّ عافِني في بَدَني، اللّهُـمَّ عافِني في سَمْعي، اللّهُـمَّ عافِني في بَصري..."
+    ];
+
+    function createZekrElement(text) {
+      const div = document.createElement("div");
+      div.className = "zekr";
+
+      // نص الذكر
+      const p = document.createElement("p");
+      p.textContent = text;
+      div.appendChild(p);
+
+      // صندوق الأزرار
+      const actions = document.createElement("div");
+      actions.className = "actions";
+
+      // زر النسخ
+      const copyBtn = document.createElement("button");
+      copyBtn.textContent = "نسخ";
+      copyBtn.title = "نسخ الذكر";
+      copyBtn.onclick = () => {
+        navigator.clipboard.writeText(text).then(() => {
+          alert("تم نسخ الذكر!");
+        });
+      };
+      actions.appendChild(copyBtn);
+
+      // زر القراءة بالصوت
+      const speakBtn = document.createElement("button");
+      speakBtn.textContent = "🔊";
+      speakBtn.title = "تشغيل الصوت";
+      speakBtn.onclick = () => {
+        if ('speechSynthesis' in window) {
+          const utterance = new SpeechSynthesisUtterance(text);
+          utterance.lang = "ar-SA";
+          speechSynthesis.cancel(); // إيقاف أي قراءة جارية
+          speechSynthesis.speak(utterance);
+        } else {
+          alert("ميزة القراءة الصوتية غير مدعومة في متصفحك.");
+        }
+      };
+      actions.appendChild(speakBtn);
+
+      div.appendChild(actions);
+
+      return div;
+    }
+
+    function displayAzkar() {
+      const morningContainer = document.getElementById("morning");
+      const eveningContainer = document.getElementById("evening");
+
+      azkarMorning.forEach(zekr => {
+        morningContainer.appendChild(createZekrElement(zekr));
+      });
+
+      azkarEvening.forEach(zekr => {
+        eveningContainer.appendChild(createZekrElement(zekr));
+      });
+    }
+
+    displayAzkar();
+
+    // مؤقت تنبيه كل 5 دقائق (300000 ملي ثانية)
+    setInterval(() => {
+      alert("تذكير بأذكار الصباح والمساء! 😊");
+    }, 300000);
+  </script>
+</body>
+</html>
